@@ -8,10 +8,39 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <model-viewer src="./assets/x1-compressed.glb"
-              alt="A 3D model of the X-1"
-              ar
-              auto-rotate
-              camera-controls></model-viewer>
+    <section class="example-container">
+        <model-viewer src="./assets/x1-compressed.glb"
+        alt="A 3D model of the X-1"
+        ar
+        auto-rotate
+        camera-controls>
+          <button id="nose" slot="hotspot-1" data-position="0.13269959757603203m 2.874226810452571m 4.16694598701012m" data-normal="-0.34270411733097433m 0.8413730641185635m 0.41790579672952316m" data-visibility-attribute="visible">
+              <div class="HotspotAnnotation">nose
+              </div>
+          </button><button id="tail" slot="hotspot-2" data-position="-0.05257839071036585m 3.662582722065565m -4.451591658059451m" data-normal="0.7097611514874856m 0.6944530381102912m -0.11821203702899656m" data-visibility-attribute="visible">
+              <div class="HotspotAnnotation">tail
+              </div>
+          </button><button id="cockpit" slot="hotspot-3" data-position="0.32582640301735566m 3.2932219675466072m 2.824913654138946m" data-normal="0.4788084434948537m 0.8555428811372772m 0.1969488587764922m" data-visibility-attribute="visible">
+              <div class="HotspotAnnotation">cockpit
+              </div>
+          </button>
+      </model-viewer>
+      <div class="content">
+          <div id="nose-info">
+            <h2>Nose of the X-1</h2>
+            <p> The X-1 is a rocket-powered aircraft that was the first to break the sound barrier. It was designed by the United States Army Air Forces and built by the North American Aviation company. The X-1 was first flown on October 14, 1947, and was piloted by Chuck Yeager. The X-1 was retired in 1953 and is now on display at the National Air and Space Museum in Washington, D.C. </p> 
+        </div>
+          <div id="tail-info">
+            <h2>Tail of the X-1</h2>
+            <p> The X-1 is a rocket-powered aircraft that was the first to break the sound barrier. It was designed by the United States Army Air Forces and built by the North American Aviation company. The X-1 was first flown on October 14, 1947, and was piloted by Chuck Yeager. The X-1 was retired in 1953 and is now on display at the National Air and Space Museum in Washington, D.C. </p> 
+        </div>
+          <div id="cockpit-info">
+            <h2>Cockpit of the X-1</h2>
+            <p> The X-1 is a rocket-powered aircraft that was the first to break the sound barrier. It was designed by the United States Army Air Forces and built by the North American Aviation company. The X-1 was first flown on October 14, 1947, and was piloted by Chuck Yeager. The X-1 was retired in 1953 and is now on display at the National Air and Space Museum in Washington, D.C. </p> 
+        </div>
+      </div>
+    </section>
+    
+            <script src="./js/main.js"></script>
 </body>
 </html>
